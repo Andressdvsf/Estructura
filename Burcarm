@@ -1,0 +1,25 @@
+
+public class mayor {
+	public static void main(String[]args) 	{	
+		  int[] a= {15,20,55,34, 78, 19, 50, 6, 80 , 150, 10, 11 , 8,7};
+		  int m = 5;
+		  int n = a.length;
+		  int valor = -1;
+		
+		  if (m >= 1 &&  m<=n) {
+			    valor = a[0];
+			for (int i=1; i < n; i++) {
+				if(i>m) {
+					break;
+					}
+				if(valor<a[i]) {
+					valor = a[i];
+				}
+			}
+			System.out.println("El mayor valor del array es : " + valor);
+		  }else {
+			System.out.println("El tamaño M es mayor al tamaño del array");
+		}
+	}
+
+}
