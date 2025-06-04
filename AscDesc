@@ -1,0 +1,63 @@
+import java.util.Arrays;
+
+public class  {
+
+    /**
+     * Ordena un arreglo de enteros en orden ascendente o descendente.
+     *
+     * @param A     El arreglo de enteros a ordenar.
+     * @param orden Una cadena que indica el orden: "ascendente" o "descendente".
+     * @return El arreglo ordenado.
+     */
+    public static int[] ordenar(int[] A, String orden) {
+        int n = A.length;
+        // Bucle externo para recorrer todo el arreglo
+        for (int i = 0; i < n - 1; i++) {
+            // Bucle interno para las comparaciones y swaps
+            for (int j = 0; j < n - i - 1; j++) {
+                boolean necesitaSwap = false;
+
+                // Determina si se necesita un intercambio basado en el orden
+                if (orden.equalsIgnoreCase("ascendente")) {
+                    if (A[j] > A[j + 1]) {
+                        necesitaSwap = true;
+                    }
+                } else if (orden.equalsIgnoreCase("descendente")) {
+                    if (A[j] < A[j + 1]) {
+                        necesitaSwap = true;
+                    }
+                }
+
+                // Realiza el intercambio si es necesario
+                if (necesitaSwap) {
+                    int temp = A[j];
+                    A[j] = A[j + 1];
+                    A[j + 1] = temp;
+                }
+            }
+        }
+        return A;
+    }
+
+    public static void main(String[] args) {
+        // --- EJEMPLO 1 ---
+        int[] arreglo1 = {1, 2, 3};
+        System.out.println("Ejemplo 1:");
+        System.out.println("Arreglo Original: " + Arrays.toString(arreglo1));
+        // Llamada a la función para ordenar de forma descendente
+        int[] resultado1 = ordenar(arreglo1, "descendente");
+        System.out.println("A_Ordenado [] = " + Arrays.toString(resultado1)); // Salida: [3, 2, 1]
+
+        System.out.println("\n--------------------------------\n");
+
+        // --- EJEMPLO 2 ---
+        int[] arreglo2 = {2, 0, 5, 1, 4};
+        System.out.println("Ejemplo 2:");
+        System.out.println("Arreglo Original: " + Arrays.toString(arreglo2));
+        // Llamada a la función para ordenar de forma ascendente
+        int[] resultado2 = ordenar(arreglo2, "ascendente");
+        System.out.println("A_Ordenado [] = " + Arrays.toString(resultado2)); // Salida: [0, 1, 2, 4, 5]
+    }
+}
+
+
