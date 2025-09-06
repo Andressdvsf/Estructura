@@ -1,0 +1,32 @@
+package Taller1;
+
+import java.util.Random;
+
+public class Taller1 {
+	public static void main (String[] args) {
+	
+	int[]array = new int [100000];
+	 Random r = new Random();
+	Long milisiniciales = System.currentTimeMillis();
+	
+	for (int i = 0; i < array.length; i++) {
+		array[i] = r.nextInt();
+		
+	}
+	Long milisFinales = System.currentTimeMillis();
+	System.out.println("Tiempo de procesamiento asigmaciòn: " + (milisFinales - milisiniciales));
+	
+	}
+      int aux
+	for (int i = 0; i < array.length; i++) 
+		 Random r = new Random();
+		 array[i] = r.nextInt();
+	 Private static int buscarpocision(int[]array, int valor) {
+		 if (array == null ││ array.length)
+			Long milisiniciales = System.currentTimeMillis();
+			Long milisFinales  = System.currentTimeMillis();
+			System.out.println("Tiempo de procesamiento asigmaciòn" + (milisFinales - milisiniciales);
+			
+	 }
+}
+System.out.println("Hola mundo");
