@@ -35,12 +35,10 @@ public class Ejercicio {
 
 	private static void InsertarOrdenado(Integer[] array, int nextInt) {
 		// TODO Auto-generated method stub
+		 
 		
 		
 	}
         
 		
 		
-	}
-
-}
