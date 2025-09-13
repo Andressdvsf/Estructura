@@ -1,0 +1,46 @@
+package Ejercicio;
+
+import java.util.List;
+import java.util.Random;
+import java.util.LinkedList;
+import java.util.ArrayList;
+
+
+public class Ejercicio {
+
+	private static final Integer InsertarOrdenado = null;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        int n = 1000000;
+        Integer[] array = new Integer [n];
+        List<Integer> arrayDinamico = new ArrayList<Integer>(n);
+        LinkedList<Integer> listaligada = new LinkedList<Integer>();
+       
+        Random r = new Random();
+        
+        for (n=0 ; n < array.length; n++) {
+        	
+        			
+                   
+        	
+        	       InsertarOrdenado(array, r.nextInt());
+        	       
+        	       System.out.println(array[n] );
+        }
+
+
+        }
+  
+
+	private static void InsertarOrdenado(Integer[] array, int nextInt) {
+		// TODO Auto-generated method stub
+		
+		
+	}
+        
+		
+		
+	}
+
+}
