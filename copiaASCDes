@@ -1,0 +1,67 @@
+import java.util.ArrayList;
+import java.util.List;
+public class AscDesc {
+	        
+	public static void Ordenarlist(List<Integer> lista, String Orden) {
+        if (lista == null || lista.size() <= 1) {
+            return; // No hay nada que ordenar
+        }
+
+        int n = lista.size();
+        boolean intercambiado;
+        for (int i = 0; i < n - 1; i++) {
+		      intercambiado= false; 
+   		 for (int j = 0; j < n - i - 1; j++) {
+                boolean ReqCamb = false;
+   		      
+                    if (Orden.equalsIgnoreCase("Ascendente")) {
+                         if (lista.get(j) > lista.get(j+1) ) {
+                         ReqCamb = true;
+                         }                     
+                    } else if (Orden.equalsIgnoreCase("descendente")) {
+                         if (lista.get(j) < lista.get(j+1)) {
+                       	 ReqCamb= true;
+                         }
+                    }
+   		     
+                    if (ReqCamb) {
+                   	 int temp = lista.get(j);
+                   	 lista.set(j, lista.get(j+1));
+                   	 lista.set(j + 1, temp);
+                   	 intercambiado = true;
+                    }
+   		      }
+   		      if(!intercambiado) {
+   		    	  break;
+   		      }
+   		 }    
+
+   	 }    
+    
+	   public static void main(String[] args) {
+	        // Creación y llenado de la lista inicial
+	        List<Integer> lista = new ArrayList<>();
+	        lista.add(4);
+	        lista.add(2);
+	        lista.add(1);
+	        lista.add(3);
+
+	        System.out.println("Lista original: " + lista); // [4, 2, 1, 3]
+
+	        // --- Ordenamiento Ascendente ---
+             Ordenarlist(lista, "ascendente");
+	        System.out.println("\n// El resultado esperado de la lista es: 1,2,3,4");
+	        System.out.println("Lista ordenada ascendentemente: " + lista);
+	        System.out.print("System.out.println(lista.get(0)); // Esto debe imprimir 1 -> Resultado: ");
+	        System.out.println(lista.get(0));
+
+	        // --- Ordenamiento Descendente ---
+	        Ordenarlist(lista, "descendente");
+	        System.out.println("\n// El resultado esperado de la lista es: 4,3,2,1");
+	        System.out.println("Lista ordenada descendentemente: " + lista);
+	        System.out.print("System.out.println(lista.get(0)); // Esto debe imprimir 4 -> Resultado: ");
+	        System.out.println(lista.get(0));
+	    }   
+        
+
+}
