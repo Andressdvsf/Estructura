@@ -1,0 +1,48 @@
+package nodo;
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Nodo arbol = new Nodo(10);
+		arbol.insertar(new Nodo(5))
+		arbol.insertar(new Nodo (20));
+		arbol.insertar(new Nodo(1));
+		System
+
+	}
+
+}
+public String toString() {
+	StringBuilder sb = new StringBuilder();
+	
+	int altura = calcularAltura();
+	if (altura == 1) {
+		sb.append(valor);
+		
+			
+		}else {
+			int numeroLineas = altura;
+			while (numeroLineas > 0) {
+				
+					
+				}
+				
+			}
+			
+			int
+		
+		sb.append(System.lineSeparator());
+		if(izq !=  null) {
+			sb.append(izq.toString());
+			
+		}
+		
+		
+		
+	}else {
+		for(int i= 0 ; i) 
+	}
+		System.out.print(valor);
+	
+}
