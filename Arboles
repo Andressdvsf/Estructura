@@ -1,0 +1,41 @@
+package nodo;
+
+public class Nodo {
+
+	public static void main(String[] args) {
+		
+		if (izq != null && n.valor < izq.valor) {
+			
+		}
+
+	}
+
+}
+public void insertar(Nodo n) {
+	if(izq == null && n.valor < valor ) {
+		
+	}
+}
+
+public void setDer(Nodo der) {
+	   this.der = der;
+	   
+}
+   public int getValor() {
+	   return valor;
+   }
+   
+   public void setValor (int valor) {
+	   this.valor = valor;
+	   
+   }
+   public int calcularAltura() {
+	   int altura = 1;
+	   int alturaIzq = 0;
+	   int alturaDer = 0;
+	   if(izq != null) {
+		   alturaIzq = izq.calcularAltura();
+		   
+	   }
+	   if (der!=)
+   }
