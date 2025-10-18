@@ -1,41 +1,67 @@
 package nodo;
 
-public class Nodo {
+public class test {
 
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Nodo arbol = new Nodo(10);
+		arbol.insertar(new Nodo(5))
+		arbol.insertar(new Nodo (20));
+		arbol.insertar(new Nodo(1));
+		System.out.println("Altura: " + arbol.calcularAltura);
+		System.out.println("Arbol: ");
+		System.out.println(arbol.toString);
 		
-		if (izq != null && n.valor < izq.valor) {
+
+	}
+
+}
+public String toString() {
+	StringBuilder sb = new StringBuilder();
+	
+
+	if (izq != null && der != null) {
+	  return " " + valor;
+	
+			  
+		  }
+	if(izq!= null) {
+		
+		sb.append(izq.toString());
+	}
+	sb.append(" ");
+	if(der!= null){
+		sb.append(der.toString());
+		
+	}
+	sb.insert(0, null)
+		
+		{
+			
+		
+			
+		}else {
+			int numeroLineas = altura;
+			while (numeroLineas > 0) {
+				
+					
+				}
+				
+			}
+			
+			int
+		
+		sb.append(System.lineSeparator());
+		if(izq !=  null) {
+			sb.append(izq.toString());
 			
 		}
-
-	}
-
-}
-public void insertar(Nodo n) {
-	if(izq == null && n.valor < valor ) {
 		
+		
+		
+	}else {
+		for(int i= 0 ; i) 
 	}
+		System.out.print(valor);
+	
 }
-
-public void setDer(Nodo der) {
-	   this.der = der;
-	   
-}
-   public int getValor() {
-	   return valor;
-   }
-   
-   public void setValor (int valor) {
-	   this.valor = valor;
-	   
-   }
-   public int calcularAltura() {
-	   int altura = 1;
-	   int alturaIzq = 0;
-	   int alturaDer = 0;
-	   if(izq != null) {
-		   alturaIzq = izq.calcularAltura();
-		   
-	   }
-	   if (der!=)
-   }
